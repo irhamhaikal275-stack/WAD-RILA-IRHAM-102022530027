@@ -9,10 +9,9 @@ class Pemesanan extends Model
 {
     use HasFactory;
 
-    // Menghubungkan ke nama tabel persis di MySQL Workbench kamu
     protected $table = 'pemesanan';
 
-    public $timestamps = false; // matikan jika tabel native kamu tidak memakai created_at/updated_at
+    public $timestamps = false;
 
     protected $fillable = [
         'nama',
@@ -22,7 +21,7 @@ class Pemesanan extends Model
         'sepatu',
         'bola',
         'total_bayar',
-    ];
+];
 
     protected static function booted()
     {
