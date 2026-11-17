@@ -11,6 +11,14 @@
     <nav>
         <a href="{{ url('/pemesanan-user') }}" class="active">Input Data</a>
         <a href="{{ url('/pemesanan-user/data') }}">Data Pemesanan</a>
+        <span class="nav-user">{{ auth()->user()->name }} ({{ auth()->user()->role }})</span>
+        @if (auth()->user()->isAdmin())
+            <a href="{{ url('/admin') }}">Panel Admin</a>
+        @endif
+        <form action="{{ url('/logout') }}" method="POST" class="nav-logout">
+            @csrf
+            <button type="submit">Logout</button>
+        </form>
     </nav>
 
     <div class="box" style="max-width: 600px; margin-bottom: 30px;">

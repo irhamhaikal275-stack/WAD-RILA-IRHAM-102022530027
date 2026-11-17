@@ -104,3 +104,94 @@ nav a.active {
 
 .btn-edit  { background: #f39c12; }
 .btn-hapus { background: #e74c3c; }
+
+.alert-error {
+    background: #fdecea;
+    color: #b71c1c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.nav-user {
+    color: #cfd8dc;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.nav-logout {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-logout button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+}
+
+.stat-grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.stat-card {
+    flex: 1;
+    min-width: 180px;
+    background: #174a6e;
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.stat-card.stat-kecil {
+    background: #284058;
+}
+
+.stat-label {
+    font-size: 14px;
+    opacity: 0.85;
+    margin-bottom: 8px;
+}
+
+.stat-value {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav-user {
+    color: #cfd8dc;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.nav-logout {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-logout button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+}
